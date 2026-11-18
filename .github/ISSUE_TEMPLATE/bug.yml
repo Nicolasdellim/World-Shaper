@@ -1,0 +1,45 @@
+name: Signaler un bug / Bug report
+description: Quelque chose ne marche pas comme prévu / Something doesn't work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: quoi
+    attributes:
+      label: Que se passe-t-il ? / What happens?
+      description: Ce que vous voyez, et ce que vous attendiez à la place.
+    validations:
+      required: true
+  - type: textarea
+    id: etapes
+    attributes:
+      label: Étapes pour reproduire / Steps to reproduce
+      placeholder: |
+        1. Nouveau monde 2048 × 2048
+        2. Pinceau « Lisser », rayon 64
+        3. …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version de World Shaper / Version
+      description: Aide → À propos
+    validations:
+      required: true
+  - type: dropdown
+    id: systeme
+    attributes:
+      label: Système / OS
+      options: [Windows, macOS, Linux]
+    validations:
+      required: true
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Concerne l'export ? / Export related?
+      options: [Non / No, Java, Bedrock]
+  - type: textarea
+    id: fichiers
+    attributes:
+      label: Captures, journaux, projet / Screenshots, logs, project
+      description: Glissez ici des captures ou un projet zippé (rien de privé).

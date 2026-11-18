@@ -1,0 +1,26 @@
+name: Proposer une idée / Feature idea
+description: Une fonctionnalité ou une amélioration / A feature or improvement
+labels: [idée]
+body:
+  - type: textarea
+    id: besoin
+    attributes:
+      label: Le besoin / The need
+      description: Ce que vous essayez de faire, et ce qui vous en empêche aujourd'hui.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Ce que vous imaginez / What you imagine
+      description: Comment ça pourrait marcher (outil, réglage, menu…). Une capture ou un croquis aide beaucoup.
+  - type: textarea
+    id: ailleurs
+    attributes:
+      label: Vu ailleurs ? / Seen elsewhere?
+      description: WorldPainter, Axiom, WorldEdit, Gaea… avec le nom de la fonction.
+  - type: dropdown
+    id: importance
+    attributes:
+      label: Importance pour vous / How much it matters
+      options: [Confort, Utile souvent, Indispensable]
